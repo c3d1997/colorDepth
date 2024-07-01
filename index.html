@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Screen colorDepth property in HTML
+  </title>
+  <style>
+    h1 {
+      color: green;
+    }
+
+    h2 {
+      font-family: Impact;
+    }
+
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>GeeksforGeeks</h1>
+  <h2>Screen colorDepth property</h2>
+
+  <p>
+    or returning the color depth, double
+    click the "Colour Depth" button:
+  </p>
+
+  <button ondblclick="color_depth()">
+    Color Depth
+  </button>
+
+  <p id="depth"></p>
+
+  <script>
+    function color_depth() {
+
+      var c =
+        "Color Depth in bits per pixel : "
+        + screen.colorDepth;
+      document.getElementById("depth").innerHTML = c;
+
+    } 
+  </script>
+</body>
+
+</html>
